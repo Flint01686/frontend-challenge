@@ -1,6 +1,8 @@
 ## Проект задеплоен!
 https://guileless-starlight-bf2195.netlify.app/
 
+P.s. не видел в тз пункта, но у меня, если открыть одновременно вкладку любимых и главную, состояния котиков будут меняться на обеих страницах без полного обновления этих страниц.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
