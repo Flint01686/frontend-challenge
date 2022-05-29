@@ -1,0 +1,109 @@
+.cats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  padding: 7vh 7vh;
+  justify-content: space-between;
+  column-gap: 5vh;
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+  row-gap: 7vh;
+  .container_pic {
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 500ms; 
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      img {
+        z-index: 0;
+      }
+      @media (pointer: coarse) {
+        transform: scale(1);
+      }
+    }
+    img {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      object-fit: cover; 
+      background-color: white; //для того чтобы сердечко не вылазило когда картинки без фона
+      z-index: 2;
+      @media (pointer: coarse) {
+        z-index: 0;
+      }
+    }
+    .fav{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 52px;
+      background-image: url("../public/index/empty.svg");
+      &:hover {
+        background-image: url("../public/index/hover.svg");
+        z-index: 2 !important;
+      }
+      z-index: 0;
+      @media (pointer: coarse) {
+        z-index: 2;
+      }
+    }
+    .fav_active {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 52px;
+      background-image: url("../public/index/like.svg");
+      z-index: 1000 !important;
+    }
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  &-sm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  img {
+    margin-top: 8vh;
+    width: 500px;
+    height: 500px;
+    @media (max-width: 500px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.cats_request {
+  width: 100%;
+  text-align: center;
+  a {
+    -webkit-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+    font-weight: bold;
+  }
+  @-webkit-keyframes blink {
+    50% { color: rgb(34, 34, 34); }
+    51% { color: rgb(30, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+  }
+  @keyframes blink {
+    50% { color: rgb(34, 34, 34); }
+    51% { color: rgb(30, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+  }
+}

@@ -1,32 +1,34 @@
-# Задание для Front-end стажёра
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Привет! Если ты хочешь стать частью команды Учи.ру в рамках стажёрской программы, 
-то тебе необходимо выполнить небольшое тестовое задание. Это нужно, что бы твои 
-потенциальные наставники смогли оценить твои навыки и сравнив их с остальными
-кандидатами выбрать лучших из лучших. 
+## Getting Started
 
-Помни, что работающий продукт важнее количества технологий и красивого кода. 
+First, run the development server:
 
-Удачи!
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## Что нужно сделать ?
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- форкнуть этот репозитарий в свой github аккаунт
-- реализовать проект по описанию ниже
-- опубликовать его на github pages
-- прислать нам свой гитхаб аккаунт и ссылку на опубликованный сайт
-- ждать обратной связи :)
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## Проект "Кошачий пинтерест"
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Необходимо реализовать интерфейс для просмотра котиков используя API https://thecatapi.com
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Дизайн лежит тут - https://bit.ly/3utxaL2
+## Learn More
 
-- по умолчанию должна открываться вкладка "все котики"
-- у котика должна быть возможность добавить в "любимые" и убрать из "любимых"
-- данные о "любимых" котиках должны хранится на клиенте
-- на вкладке "любимые котики" должны отображаться добавленные в "любимые" котики
-- реализация адаптивности будет плюсом, но не обязательна
-- бесконечная прокрутка будет плюсом, но не обязательна
-- можно использовать любой фреймворк включая vanilla.js
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

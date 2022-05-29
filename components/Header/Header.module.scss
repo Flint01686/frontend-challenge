@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    background: #2196F3;
+    height: 10vh;
+    padding-left: 5vw;
+    div {
+        cursor: pointer !important;
+        all: initial;
+        height: 100%;
+        padding: 0 2vw;
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+            color: #FFFFFFB2;
+            vertical-align: middle;
+        }
+    }
+    .active, div:hover {
+        p {
+            color: white;
+        }
+        background: #1E88E5;
+    }
+}
